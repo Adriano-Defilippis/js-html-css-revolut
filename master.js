@@ -1,7 +1,6 @@
 //Gestione dei menu Drop-Box nell HEADER
 var linkElement = document.getElementById('nav-bar-right');
-var dropClik = $('a');
-var dropMenu = $('.drop');
+var dropClik = $('.buttonDropDown');
 
 console.log(dropClik);
 

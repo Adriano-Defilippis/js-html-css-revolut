@@ -8,6 +8,7 @@
 /* REGOLE HEADER */
 header {
   /* background-color: lightgrey; */
+  position: relative;
   display: flex;
 }
 
@@ -18,7 +19,7 @@ header {
 
 /* contenitore immagine logo */
 #nav-bar-left a:first-child{
-  width: 15%;
+  width: 100px;
 }
 
 header nav{
@@ -42,6 +43,8 @@ header ul li{
   position: relative;
 }
 
+
+
 /* Regole per i link Header */
 header a{
   margin-right: 10px;
@@ -57,6 +60,9 @@ header a{
   color: black;
 }
 
+#nav-bar-right {
+  justify-content: flex-end;
+}
 
 header button{
   padding: 10px;
@@ -75,6 +81,7 @@ header .drop{
   width: 15vw;
   position: absolute;
   left: -50%;
+  top: 180%;
   flex-direction: column;
   border-radius: 5px;
   /* visibility: hidden; */
@@ -83,7 +90,6 @@ header .drop{
 
 header .drop li{
   width: 100%;
-  margin: 0 auto;
   padding: 4% 1%;
 }
 
@@ -91,9 +97,79 @@ header .drop li:hover{
   background-color: lightgrey;
 }
 
+header .drop a{
+  margin: 0 auto;
+}
+
+/* Regole per Menu ad hamburgher */
+#hamburgerButton{
+  display: none;
+  position: relative;
+  right: 0;
+}
+
+.hamburger-menu{
+  /* display: none; */
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  display: none;
+
+}
+
+.hamburger-menu ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.hamburger-menu ul{
+  align-self: center;
+}
+
+.hamburger-menu > a{
+  align-self: flex-end;
+}
 
 
 /* Helper class */
 .active{
   display: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1000px)
+{
+  #nav-bar-left ul{
+    display: none;
+  }
+
+  #nav-bar-right ul,
+  #nav-bar-right button{
+    display: none;
+  }
+
+  #hamburgerButton{
+    display: block;
+  }
+
+  .hamburger-menu {
+      display: none;
+  }
+
+  /* .hamburger-menu.active {
+      display: block;
+  } */
+
+
 }
