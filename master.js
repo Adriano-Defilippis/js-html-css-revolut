@@ -1,7 +1,6 @@
 //Gestione dei menu Drop-Box nell HEADER
 var dropClik = $('.buttonDropDown');
 var closeHamburger = $('.close');
-var hamburgerButton = $('#hamburgerButton');
 var hamburgerMenu = $('.hamburger-menu');
 
 console.log(dropClik);
@@ -15,7 +14,7 @@ dropClik.click(function(){
 
 });
 
-
+var hamburgerButton = $('#hamburgerButton');
 //Azione del click sul Hamburger per far comparire Menu
 hamburgerButton.click(function(){
 
@@ -23,6 +22,7 @@ hamburgerButton.click(function(){
 
 });
 
+var closeHamburger = $('.close');
 //Azione sull'icona Close per chiudere il Menu
 closeHamburger.click(function(){
 
