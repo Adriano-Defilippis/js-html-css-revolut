@@ -7,7 +7,7 @@
 
 /* REGOLE HEADER */
 header {
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   display: flex;
 }
 
@@ -40,13 +40,30 @@ header ul li{
   margin-right: 5px;
 }
 
+/* Regole per i link Header */
 header a{
   margin-right: 10px;
+  text-decoration: none;
+  color: grey;
 }
+
+#nav-bar-left a:active{
+  color: black;
+}
+
+#nav-bar-right a:hover{
+  color: black;
+}
+
+
 
 header button{
   padding: 10px;
   background-color: #eb008d;
   color: white;
   border-radius: 50px;
+}
+
+header button:hover{
+  opacity: 0.7;
 }
