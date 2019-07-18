@@ -1,0 +1,45 @@
+/* Istruzioni generali */
+*{
+  margin:0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+/* REGOLE HEADER */
+header {
+  background-color: lightgrey;
+  display: flex;
+}
+
+/* Immagine logo */
+#logoHeader{
+  width: 100%;
+}
+
+/* contenitore immagine logo */
+#nav-bar-left a:first-child{
+  width: 15%;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+header nav:last-child{
+  justify-content: flex-end;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+}
+
+header ul li{
+  margin-right: 5px;
+}
+
+header a{
+  margin-right: 10px;
+}
