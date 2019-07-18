@@ -64,6 +64,14 @@ header a{
   justify-content: flex-end;
 }
 
+.dinamicArrow i {
+  transform: rotate(180deg);
+}
+
+.dinamicArrow:hover i {
+  transform: rotate(360deg);
+}
+
 header button{
   padding: 2% 4%;
   background-color: #eb008d;
