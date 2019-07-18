@@ -43,3 +43,10 @@ header ul li{
 header a{
   margin-right: 10px;
 }
+
+header button{
+  padding: 10px;
+  background-color: #eb008d;
+  color: white;
+  border-radius: 50px;
+}
