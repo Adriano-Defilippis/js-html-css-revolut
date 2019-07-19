@@ -137,9 +137,16 @@ header .drop a{
 
 .hamburger-menu > a{
   width: 100%;
-  align-content: flex-end;
+  /* float: right; */
 
 }
+
+.hamburger-menu > a i{
+  float: right;
+  margin-right: 10px;
+
+}
+
 
 
 .hamburger-menu ul {
