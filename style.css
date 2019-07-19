@@ -3,6 +3,7 @@
   margin:0;
   padding : 0;
   box-sizing: border-box;
+  font-family: Verdana;
 }
 
 
@@ -22,12 +23,13 @@ header {
 /* contenitore immagine logo */
 #nav-bar-left a:first-child{
   width: 100px;
+  margin-right: 20px;
 }
 
 header nav{
   display: flex;
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
 }
 
 header nav:last-child{
@@ -43,28 +45,43 @@ header ul{
 header ul li{
   margin-right: 20px;
   position: relative;
-  min-width: 50px;
+  /* min-width: 50px; */
 }
 
 
 /* Regole per i link Header */
 header a{
-  margin-right: 10px;
   text-decoration: none;
   color: grey;
 }
 
+#nav-bar-left {
+  min-width: 40%;
+}
+
+
 #nav-bar-left a:active{
   color: black;
 }
+
+#nav-bar-left a{
+  text-transform: uppercase;
+}
+
 
 #nav-bar-right a:hover{
   color: black;
 }
 
 #nav-bar-right {
+  min-width: 60%;
   justify-content: flex-end;
 }
+
+#nav-bar-right a {
+  text-transform: capitalize;
+}
+
 
 .dinamicArrow i {
   transform: rotate(180deg);
