@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* REGOLE HEADER */
 header {
   /* background-color: lightgrey; */
@@ -40,8 +41,9 @@ header ul{
 }
 
 header ul li{
-  margin-right: 10px;
+  margin-right: 20px;
   position: relative;
+  min-width: 50px;
 }
 
 
@@ -73,11 +75,12 @@ header a{
 }
 
 header button{
-  padding: 2% 4%;
+  padding: 10px 10px;
   background-color: #eb008d;
   color: white;
   border-radius: 50px;
   min-width: 100px;
+  max-height: 50px;
 }
 
 header button:hover{
@@ -137,6 +140,7 @@ header .drop a{
 
 .hamburger-menu > a{
   width: 100%;
+  margin: 0;
   /* float: right; */
 
 }
